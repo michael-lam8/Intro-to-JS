@@ -1,5 +1,7 @@
-# Introduction to JavaScript – Khan Academy Projects
-This repository contains [Khan Academy projects](https://www.khanacademy.org/profile/lam.michael/projects) from the Intro to JS subject. Note that some programs in this repository have been updated and reflect a later version than those on Khan Academy.
+# Introduction to JavaScript â€“ Khan Academy Projects
+This repository contains [Khan Academy projects](https://www.khanacademy.org/profile/lam.michael/projects) from the Intro to JS subject.
+
+**Note:** Some programs in this repository have been updated and reflect a later version than those on Khan Academy. In addition, they have been slightly modified to work with p5.js mode, but the functionality remains identical or improved.
 ## Preview
 ### Project 1: What's for Dinner?
 ![Project 1: What's for Dinner?](Screenshots/1_What'sForDinner.PNG)
@@ -20,7 +22,7 @@ This repository contains [Khan Academy projects](https://www.khanacademy.org/pro
 ### Project 9: Bookshelf
 ![Project 9: Bookshelf](Screenshots/9_Bookshelf.PNG)
 
-**Note:** Mouse events currently do not work in Google Chrome. Please use a different browser (such as Microsoft Edge), or download this repository and run the program using Processing.
+**Note:** Mouse events may not work in Google Chrome. If so, please try again using a different browser, or download this repository and run the program using Processing.
 
 Michael Lam  
 ICS3U
