@@ -1,6 +1,6 @@
 // Michael Lam
 // June 6, 2018
-// Displays an animation of a (very nice rubber) duck flying away
+// Project 3: Animal Attack - Displays an animation of a (very nice rubber) duck flying away
 
 // Declaring variables
 var bodyX = 200, bodyY = 220, bodySize = 118, faceSize = bodySize / 1.5, eyeSize = bodySize - 103;

@@ -1,6 +1,6 @@
 // Michael Lam
 // June 6, 2018
-// Displays an image of pizza and orange juice
+// Project 1: What's for Dinner? - Displays an image of pizza and orange juice
 
 // Initial setup
 function setup() {

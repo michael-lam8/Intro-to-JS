@@ -1,6 +1,6 @@
 // Michael Lam
 // June 6, 2018
-// Displays an animation of shooting stars
+// Project 2: Shooting Star: Displays an animation of shooting stars
 
 // Declaring variables
 var xPos = 45, xPos2 = 350, yPos = 355; // Integers
