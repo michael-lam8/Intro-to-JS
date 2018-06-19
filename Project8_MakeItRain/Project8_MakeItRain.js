@@ -2,8 +2,13 @@
 // June 17, 2018
 // Project 8: Make It Rain - Animation of raindrops, with the ability to add more raindrops by mouse click
 
+// Last updated June 19, 2018
+// - Added colours and variable falling speeds to raindrops
+//    - Colours and speeds are randomly generated upon startup and on each mouse click
+
 // Declaring variables
-var xPositions = [], yPositions = [];
+var colour, ySpeed;
+var xPositions = [], yPositions = [], dropColour = [], rainSpeed = [];
 
 function setup() {
   createCanvas(400, 400);
@@ -13,6 +18,13 @@ function setup() {
     xPositions.push(j);
     yPositions.push(0);
   }
+  // Initializes random colours and falling speed for raindrops
+  for (var i = 0; i < xPositions.length; i++) {
+    colour = color(random(255), random(255), random(255));
+    dropColour.push(colour);
+    ySpeed = random(5, 10);
+    rainSpeed.push(ySpeed);
+  }
 }
 
 // Runs animation continuously
@@ -21,11 +33,11 @@ function draw() {
   // Draws and animates rain falling down screen
   for (var i = 0; i < xPositions.length; i++) {
     noStroke();
-    fill(0, 200, 255);
+    fill(dropColour[i]);
     ellipse(xPositions[i], yPositions[i], 10, 10);
-    yPositions[i] += 5;
+    yPositions[i] += rainSpeed[i];
     // Resets y coordinate when raindrops reach bottom of screen
-    if (yPositions[i] === height) {
+    if (yPositions[i] >= height) {
       yPositions[i] = 0;
     }
   }
@@ -35,4 +47,8 @@ function draw() {
 function mouseClicked() {
   xPositions.push(mouseX);
   yPositions.push(0);
+  colour = color(random(255), random(255), random(255));
+  dropColour.push(colour);
+  ySpeed = random(5, 10);
+  rainSpeed.push(ySpeed);
 };
